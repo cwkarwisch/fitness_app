@@ -5,6 +5,7 @@ require 'sinatra/content_for'
 
 before do
   @users = ["NDF", "Andrew", "Mr. Fish", "trvshlt", "CWK"]
+  @stats = ["running", "calories", "weigh-ins"]
 end
 
 get '/' do
