@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Fitness Tracker</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+
+  </head>
+  <body>
+    <main>
+      <% if session[:message] %>
+        <div class="message">
+          <%= display_alert %>
+        </div>
+      <% end %>
+
+      <%== yield %>
+
+    </main>
+  </body>
+</html>
